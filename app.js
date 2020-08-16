@@ -4,6 +4,7 @@ var bodyParser 	= require('body-parser');
 var login = require('./controllers/login');
 var logout =require('./controllers/logout');
 var admin =require('./controllers/admin');
+var employee =require('./controllers/employee');
 var addEmployee =require('./controllers/addEmployee');
 var allEmpList =require('./controllers/allEmpList');
 
@@ -31,6 +32,7 @@ app.use('/js',express.static('assets/js'));
 app.use('/logout',logout);
 app.use('/login',login);
 app.use('/admin',admin);
+app.use('/employee',employee);
 app.use('/addEmployee',addEmployee);
 app.use('/allEmpList',allEmpList);
 
